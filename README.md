@@ -31,7 +31,7 @@ apple_notes.open_note("Home)
 Clone the repository:
 
 ```sh
-git clone ...
+git clone https://github.com/floscha/apple-notes-python.git
 ```
 
 Install from repository:
