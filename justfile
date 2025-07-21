@@ -2,8 +2,7 @@ install:
     uv tool install -e .
 
 format:
-    - uvx ruff check --fix apple_notes
-    - uvx ruff format apple_notes
+    pre-commit run --all-files
 
-test:
-    uvx pytest
+test *args:
+    uvx pytest {{ args }}

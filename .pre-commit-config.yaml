@@ -1,0 +1,19 @@
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.4
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.37.1
+    hooks:
+      - id: yamllint
+
+  - repo: https://github.com/nikaro/taplo-pre-commit
+    rev: 0.1.1
+    hooks:
+      - id: taplo-lint
+      - id: taplo-format
